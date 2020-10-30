@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Cascadia Code:size=11:antialias=true:autohint=true";
+static char *font = "Cascadia Code:size=11";
 static int borderpx = 2;
 
 /*
@@ -87,36 +87,37 @@ float alpha = 1;
 
 
 /* Terminal colors (16 first used in escape sequence) */
- static const char *colorname[] = {
+static const char *colorname[] = {
+
   /* 8 normal colors */
-  [0] = "#000000", /* black   */
-  [1] = "#ff5555", /* red     */
-  [2] = "#50fa7b", /* green   */
-  [3] = "#f1fa8c", /* yellow  */
-  [4] = "#bd93f9", /* blue    */
-  [5] = "#ff79c6", /* magenta */
-  [6] = "#8be9fd", /* cyan    */
-  [7] = "#bbbbbb", /* white   */
+  [0] = "#151515", /* black   */
+  [1] = "#ac4142", /* red     */
+  [2] = "#90a959", /* green   */
+  [3] = "#f4bf75", /* yellow  */
+  [4] = "#6a9fb5", /* blue    */
+  [5] = "#aa759f", /* magenta */
+  [6] = "#75b5aa", /* cyan    */
+  [7] = "#d0d0d0", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#44475a", /* black   */
-  [9]  = "#ff5555", /* red     */
-  [10] = "#50fa7b", /* green   */
-  [11] = "#f1fa8c", /* yellow  */
-  [12] = "#bd93f9", /* blue    */
-  [13] = "#ff79c6", /* magenta */
-  [14] = "#8be9fd", /* cyan    */
-  [15] = "#ffffff", /* white   */
+  [8]  = "#505050", /* black   */
+  [9]  = "#ac4142", /* red     */
+  [10] = "#90a959", /* green   */
+  [11] = "#f4bf75", /* yellow  */
+  [12] = "#6a9fb5", /* blue    */
+  [13] = "#aa759f", /* magenta */
+  [14] = "#75b5aa", /* cyan    */
+  [15] = "#f5f5f5", /* white   */
 
   /* special colors */
-  [256] = "#282a36", /* background */
-  [257] = "#f8f8f2", /* foreground */
+  [256] = "#353535", /* background */
+  [257] = "#d0d0d0", /* foreground */
 };
 
- /*
-  * Default colors (colorname index)
-  * foreground, background, cursor
-  */
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor
+ */
 unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
 static unsigned int defaultcs = 257;
