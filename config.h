@@ -110,7 +110,7 @@ static const char *colorname[] = {
   [15] = "#f5f5f5", /* white   */
 
   /* special colors */
-  [256] = "#353535", /* background */
+  [256] = "#202020", /* background */
   [257] = "#d0d0d0", /* foreground */
 };
 
